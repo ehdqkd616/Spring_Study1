@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<!DOCTYPE mapper
+PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
+"http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+
+<mapper namespace="Reply">
+  
+  <!-- 댓글 추가  -->
+  <insert id="reply_in" parameterType="r">
+   <!-- parameterType속성은 생략가능하다. -->
+   insert into tbl_reply (rno, bno, replyer, replytext, regdate)
+   values(rno_seq.nextval, #{bno}, #{replyer}, #{replytext}, sysdate)
+  </insert>
+  
+  <!-- 댓글 목록 -->
+  <select id="reply_list" resultType="r">
+   <!-- resultType속성은 반환자료형 -->
+   select * from tbl_reply where bno=#{bno} order by rno desc
+  </select>
+  
+  <!-- 댓글 수정 -->
+  <select id="reply_edit">
+  update tbl_reply set replytext=#{replytext}, updatedate=sysdate
+  where rno=#{rno} 
+  </select>
+  
+  <!-- 댓글 삭제 -->
+  <delete id="r_del">
+  delete from tbl_reply where rno=#{rno}
+  </delete>
+  
+  <!-- 댓글로부터 게시물 번호값 알아내기 -->
+  <select id="reply_bno" resultType="int">
+    select bno from tbl_reply where rno=#{rno}
+  </select>
+  
+</mapper>
+
+
