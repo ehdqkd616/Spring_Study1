@@ -1,0 +1,116 @@
+@charset "UTF-8";
+
+/* css 주석문 기호 */
+/* admin_index.jsp ui */
+#aLogin_wrap{
+	width:320px; /*div폭*/ height:160px; /*div 높이*/
+	border:1px solid blue; /* 테두리 선두께를 1픽셀,solid 실선,선색을 파랑*/
+	box-shadow: 20px 20px 20px #ccc;/*css3에서 추가된 속성으로 그림자 효과 */
+	margin-left:auto; margin-right:auto; /* div 좌우 수평 중앙정렬 */
+	margin-top:270px; /* div 바깥 상단여백 */
+	border-radius:25px; /* 이 속성도 css3에서 추가된 속성으로 테두리를 둥글게 */	
+}
+#aLogin_wrap .aLogin_title{
+	margin:20px 0px 0px 86px; /* 시계방향으로 바깥 위,오른쪽,아래쪽,왼쪽 바깥여백을 한
+	꺼번에 지정*/
+	width:140px; font-size:19px; /*글자 크기*/
+	background:skyblue;/*배경색을 하늘색*/
+	border-radius:15px; text-align:center;/*글자를 수평 중앙정렬*/
+	padding:2px; /*상하좌우 안여백을 동시에 2픽셀로 지정*/
+}
+#aLogin_t{
+    margin:20px 0px 0px 5px;	
+}
+
+/* 
+과제물) 1.admin_index.jsp 의 아이디와 비번 입력박스 그리고 로그인 서브밋 버튼을 
+좀 더 정교한 css를 적용해서 해보시길 바랍니다. 
+*/
+
+/* admin_main.jsp ui */
+#aMain_wrap{
+	width:860px; height:760px; border:1px solid blue;
+	border-radius:15px;
+	box-shadow:15px 15px 15px #ccc;
+	margin-left:auto; margin-right:auto;
+	margin-top:30px;
+}
+#aMain_header{
+	width:840px; height:160px; border:1px solid red;
+	border-radius:15px; margin:10px 0px 0px 10px;
+}
+#aMain_logo{
+	width:150px; height:140px; border:1px solid gray;
+	border-radius:15px; margin:10px 0px 0px 10px;
+	float:left;
+	/* div는 가로줄 전체를 차지하는 블록요소 태그이다. float:left;속성을 사용하면 복수개의 div
+	가 왼쪽정렬로 배치되면서 마치 내용물 크기만큼만 차지하는 인라인 요소 태그처럼 배치된다.
+	 그러므로 복수개의 div를 수직정렬에서 수평정렬로 바꾼다.
+	*/
+}
+#aMain_logo img{
+    width:120px; height:55px; margin:41px 0px 0px 14px;	
+}
+#aMain_menu{
+	width:380px; height:140px; border:1px solid gray;
+	border-radius:15px; margin:10px 0px 0px 10px; float:left;
+}
+#aMain_menu ul li{
+	float:left;/* 수직정렬을 수평정렬로 변경*/
+	list-style: none;/*목록앞 점을 사라지게 함 */
+	margin:87px 0px 0px 0px;
+	padding:0px 5px;/* 상하 안여백을 0픽셀, 좌우 안여백을 5픽셀 */
+}
+#aMain_right{
+	width:264px; height:140px; border:1px solid gray;
+	border-radius:15px; margin:10px 0px 0px 10px; 
+	float:left;
+}
+#aMain_right .aRight_title{
+	font-size:12px;/*글자크기*/  margin-left:10px;/*바깥 왼쪽 여백 지정*/
+}
+.clear{
+  clear:both;
+  /* 위쪽 div에 float속성이 적용되었을때 빈 여백 공간이 발생하면 아래쪽 div가 위로 올라가서 ui
+  가 잘못되는 현상이 종종 발생한다. 그러므로 위의 div에 적용된 float속성을 아래쪽 div에 적용안되게
+  차단을 해야 한다. 즉 div간 잘못된 css적용을 없애주는 기능을 한다.    
+  */
+}
+#aMain_cont{
+	width:840px; height:480px; border:1px solid red;
+	border-radius:15px; margin:10px 0px 0px 10px;
+}
+#aMain_cont .aMainCont_title{
+	font-size:16px; margin:210px 0px 0px 320px;
+}
+#aMain_footer{
+	width:840px; height:72px; border:1px solid red;
+	border-radius:15px; margin:10px 0px 0px 10px;
+}
+#aMain_footer .aMainFooter_title{
+	font-size:14px; margin:27px 0px 0px 210px;
+}
+a:link{/*하이퍼링크 된곳*/
+	text-decoration: none;/*밑줄선을 사라지게 한다.*/
+}
+a:active {/* 하이퍼링크 된곳 클릭하는 순간 */
+	text-decoration: none;
+}
+a:visited {/*하이퍼링크 된곳 한번이라도 방문한곳 */
+	text-decoration: none;
+}
+a:hover {/* :hover는 마우스 오버, 하이퍼링크 된곳 마우스 오버시 */
+    text-decoration: underline;/* 밑줄선을 나오게 함 */	
+}
+
+
+
+
+
+
+
+
+
+
+
+
