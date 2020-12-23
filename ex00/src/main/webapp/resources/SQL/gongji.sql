@@ -1,32 +1,27 @@
 --gongji.sql
-create table gongji(--°øÁö Å×ÀÌºí ÀÛ¼º
- gongji_no int primary key --¹øÈ£
- ,gongji_name varchar2(30) not null --°øÁö ÀÛ¼ºÀÚ
- ,gongji_title varchar2(200) not null --°øÁö Á¦¸ñ
- ,gongji_pwd varchar2(20) not null --ºñ¹ø
- ,gongji_cont varchar2(4000) not null --°øÁö³»¿ë
- ,gongji_hit int default 0 --Á¶È¸¼ö
- ,gongji_date date --°øÁö µî·Ï³¯Â¥
+create table gongji(--ê³µì§€ í…Œì´ë¸” ì‘ì„±
+ gongji_no int primary key --ë²ˆí˜¸
+ ,gongji_name varchar2(30) not null --ê³µì§€ ì‘ì„±ì
+ ,gongji_title varchar2(200) not null --ê³µì§€ ì œëª©
+ ,gongji_pwd varchar2(20) not null --ë¹„ë²ˆ
+ ,gongji_cont varchar2(4000) not null --ê³µì§€ë‚´ìš©
+ ,gongji_hit int default 0 --ì¡°íšŒìˆ˜
+ ,gongji_date date --ê³µì§€ ë“±ë¡ë‚ ì§œ
 );
 
-select * from gongji order by gongji_no desc;--°øÁö¹øÈ£¸¦ ±âÁØÀ¸·Î ³»¸²Â÷¼ø Á¤·Ä,
---³»¸²Â÷¼ø Á¤·ÄÇÏ¸é Å«¼ıÀÚ¹øÈ£°¡ ¸ÕÀú Á¤·ÄµÈ´Ù.
+select * from gongji order by gongji_no desc;--ê³µì§€ë²ˆí˜¸ë¥¼ ê¸°ì¤€ìœ¼ë¡œ ë‚´ë¦¼ì°¨ìˆœ ì •ë ¬,
+--ë‚´ë¦¼ì°¨ìˆœ ì •ë ¬í•˜ë©´ í°ìˆ«ìë²ˆí˜¸ê°€ ë¨¼ì € ì •ë ¬ëœë‹¤.
 
---g_no_seq ½ÃÄö½º »ı¼º
+--g_no_seq ì‹œí€€ìŠ¤ ìƒì„±
 create sequence g_no_seq
-start with 1 --1ºÎÅÍ ½ÃÀÛ
-increment by 1 --1¾¿ Áõ°¡
+start with 1 --1ë¶€í„° ì‹œì‘
+increment by 1 --1ì”© ì¦ê°€
 nocache;
 
 select g_no_seq.nextval from dual;
 
 
-/* ¹®Á¦) ½ºÇÁ¸µ MVC ¼ø¼­µµ¿¡ ¸Â°Ô AdminGongjiController, AdminGongjiService,
+/* ë¬¸ì œ) ìŠ¤í”„ë§ MVC ìˆœì„œë„ì— ë§ê²Œ AdminGongjiController, AdminGongjiService,
  * AdminGongjiServiceImpl,AdminGongjiDAO,AdminGongjiDAOImpl,GongjiVO.java,
- * admin_gongji.xml, mybatis-config.xml¿¡ GonjiVOºóÅ¬·¡½º °´Ã¼ º°Äª¸í g±îÁö ¸¸µå¼¼¿ä. 
+ * admin_gongji.xml, mybatis-config.xmlì— GonjiVOë¹ˆí´ë˜ìŠ¤ ê°ì²´ ë³„ì¹­ëª… gê¹Œì§€ ë§Œë“œì„¸ìš”. 
  */
-
-
-
-
-
