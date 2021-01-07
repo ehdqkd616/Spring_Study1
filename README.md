@@ -7,9 +7,9 @@
   - [Service](https://github.com/ehdqkd616/Spring_Study1/tree/master/ex00/src/main/java/org/zerock/service)
   - [VO](https://github.com/ehdqkd616/Spring_Study1/tree/master/ex00/src/main/java/org/zerock/vo)
 
-- [SQL_File](https://github.com/ehdqkd616/Spring_Study1/tree/master/ex00/src/main/webapp/resources/SQL)
-- [SQL_Mapper](https://github.com/ehdqkd616/Spring_Study1/tree/master/ex00/src/main/resources/org/zerock/mappers/member)
-
+- **SQL**
+  - [SQL_File](https://github.com/ehdqkd616/Spring_Study1/tree/master/ex00/src/main/webapp/resources/SQL)
+  - [SQL_Mapper](https://github.com/ehdqkd616/Spring_Study1/tree/master/ex00/src/main/resources/org/zerock/mappers/member)
 
 
 - **설정 파일**
